@@ -3,7 +3,7 @@ warnings.filterwarnings('ignore')
 from ultralytics import RTDETR
 
 if __name__ == '__main__':
-    model = RTDETR('/kaggle/working/ultralytics-test/ultralytics/cfg/models/rt-detr/rtdetr-l.yaml')
+    model = RTDETR('/kaggle/working/ultralytics-test/ultralytics/cfg/models/rt-detr/rtdetr-resnet50.yaml')
     #model.load('/content/drive/MyDrive/KaggleNotebookOutput/ultralytics/runs/train/exp/weights/best.pt') # loading pretrain weights
     #model.load('/kaggle/input/tumor-yolo/finally-best.pt') # loading pretrain weights
     model.train(#data='/root/.cache/kagglehub/datasets/monaerkiconbinker/tumor-yolo/versions/2/breast_tumor04/data.yaml',
